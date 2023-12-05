@@ -27,25 +27,18 @@
 			border=""
 			class="bg-surface-100-800-token w-full"
 		>
-			<TabAnchor href="/" selected={$page.url.pathname === '/'}>
-				<svelte:fragment slot="lead">
-					<iconify-icon icon="mdi:home"></iconify-icon>
-				</svelte:fragment>
-				<span>HOME</span>
-			</TabAnchor>
-			<TabAnchor href="/billing" selected={$page.url.pathname === '/billing'}>
-				<svelte:fragment slot="lead">
-					<iconify-icon icon="streamline:money-cash-dollar-coin-accounting-billing-payment-cash-coin-currency-money-finance"></iconify-icon>
-				</svelte:fragment>
-				<span>Billing</span>
-			</TabAnchor>
 			<TabAnchor href="/inventory" selected={$page.url.pathname === '/inventory'}>
 				<svelte:fragment slot="lead">
 					<iconify-icon icon="material-symbols:inventory-2-rounded"></iconify-icon>
 				</svelte:fragment>
-				<span>inventory</span>
+				<span class="uppercase">inventory</span>
 			</TabAnchor>
-		<!-- ... -->
+			<TabAnchor href="/report" selected={$page.url.pathname === '/report'}>
+				<svelte:fragment slot="lead">
+					<iconify-icon icon="carbon:report"></iconify-icon>
+				</svelte:fragment>
+				<span class="uppercase">report</span>
+			</TabAnchor>
 		</TabGroup>
 
 
